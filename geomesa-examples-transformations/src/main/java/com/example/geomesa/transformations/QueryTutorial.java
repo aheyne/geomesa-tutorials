@@ -394,7 +394,7 @@ public class QueryTutorial {
         //Disable states collection
         dsConf.put("collectStats", "false");
         DataStore dataStore = DataStoreFinder.getDataStore(dsConf);
-        assert dataStore != null;
+        if(Objects.isNull(dataStore)) throw new RuntimeException("Unable to get datastore connection");
 
         // create the simple feature type for our test
         String simpleFeatureTypeName = cmd.getOptionValue(FEATURE_NAME_ARG);

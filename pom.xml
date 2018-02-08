@@ -30,6 +30,7 @@
         <module>geomesa-quickstart-hbase</module>
         <module>geomesa-quickstart-lambda</module>
         <module>geomesa-quickstart-storm</module>
+        <module>geomesa-quickstart-fsds</module>
     </modules>
 
     <properties>
@@ -44,7 +45,7 @@
         <!-- environment specific variables-->
         <accumulo.version>1.7.2</accumulo.version>
         <zookeeper.version>3.4.9</zookeeper.version>
-        <hadoop.version>2.5.2</hadoop.version>
+        <hadoop.version>2.6.4</hadoop.version>
         <hbase.hadoop.version>2.5.2</hbase.hadoop.version>
         <kafka.version>0.10.2.1</kafka.version>
         <storm.version>1.0.2</storm.version>
